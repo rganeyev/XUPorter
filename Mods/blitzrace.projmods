@@ -3,7 +3,7 @@
     "libs": [],
     "frameworks": ["EventKitUI.framework", "EventKit.framework", "MessageUI.framework"],
     "headerpaths": ["iOS/External/**"],
-    "files":   ["iOS/External/GoogleMobileAds.framework", "iOS/External/UnityAds.bundle", "iOS/External/UnityAds.framework", "iOS/External/SUUnityAdsAdapter.framework"],
+    "files":   ["iOS/External/GoogleMobileAds.framework"],
     "folders": [],    
     "excludes": ["^.*.meta$", "^.*.mdown$", "^.*.pdf$"],
     "compiler_flags": [],
