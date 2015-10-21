@@ -1,10 +1,12 @@
 using UnityEngine;
 using System.Collections;
 using System.IO;
+using System.Collections.Generic;
+
 
 namespace UnityEditor.XCodeEditor 
 {
-	public class XCMod 
+	public partial class XCMod 
 	{
 		private Hashtable _datastore = new Hashtable();
 		private ArrayList _libs = null;
