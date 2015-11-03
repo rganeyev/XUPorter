@@ -772,14 +772,16 @@ namespace UnityEditor.XCodeEditor
 			}
 
 			Debug.Log( "Adding compiler flags..." );
-			foreach( string flag in mod.compiler_flags ) {
-				this.AddOtherCFlags( flag );
-			}
+			if (mod.compiler_flags != null)
+				foreach( string flag in mod.compiler_flags ) {
+					this.AddOtherCFlags( flag );
+				}
 
 			Debug.Log( "Adding linker flags..." );
-			foreach( string flag in mod.linker_flags ) {
-				this.AddOtherLinkerFlags( flag );
-			}
+			if (mod.linker_flags != null)
+				foreach( string flag in mod.linker_flags ) {
+					this.AddOtherLinkerFlags( flag );
+				}
 
 			Debug.Log ("Adding plist items...");
 			string plistPath = this.projectRootPath + "/Info.plist";

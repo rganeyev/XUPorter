@@ -10,7 +10,7 @@ public static class XCodePostProcess
 {
 
 #if UNITY_EDITOR
-	[PostProcessBuild(999)]
+	[PostProcessBuild(1500)]
 	public static void OnPostProcessBuild( BuildTarget target, string pathToBuiltProject )
 	{
 		if (target != BuildTarget.iPhone) {
@@ -30,7 +30,7 @@ public static class XCodePostProcess
 		}
 
 		//TODO implement generic settings as a module option
-		project.overwriteBuildSetting("CODE_SIGN_IDENTITY[sdk=iphoneos*]", "iPhone Distribution", "Release");
+		//project.overwriteBuildSetting("CODE_SIGN_IDENTITY[sdk=iphoneos*]", "iPhone Distribution", "Release");
 		
 		// Finally save the xcode project
 		project.Save();
