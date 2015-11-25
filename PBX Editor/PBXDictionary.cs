@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace UnityEditor.XCodeEditor
+namespace UnityEditor.XUPorter
 {
 	public class PBXDictionary : Dictionary<string, object>
 	{

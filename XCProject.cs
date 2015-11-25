@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text.RegularExpressions;
 
-namespace UnityEditor.XCodeEditor
+namespace UnityEditor.XUPorter
 {
 	public partial class XCProject : System.IDisposable
 	{
@@ -698,12 +698,6 @@ namespace UnityEditor.XCodeEditor
 
 		#region Mods
 
-		public void ApplyMod( string rootPath, string pbxmod )
-		{
-			XCMod mod = new XCMod( rootPath, pbxmod );
-			ApplyMod( mod );
-		}
-				
 		public void ApplyMod( string pbxmod )
 		{
 			XCMod mod = new XCMod( pbxmod );

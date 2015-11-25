@@ -2,7 +2,7 @@ using UnityEngine;
 #if UNITY_EDITOR
 using UnityEditor;
 using UnityEditor.Callbacks;
-using UnityEditor.XCodeEditor;
+using UnityEditor.XUPorter;
 #endif
 using System.IO;
 

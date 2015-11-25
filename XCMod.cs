@@ -4,9 +4,9 @@ using System.IO;
 using System.Collections.Generic;
 
 
-namespace UnityEditor.XCodeEditor 
+namespace UnityEditor.XUPorter 
 {
-	public partial class XCMod 
+	public class XCMod 
 	{
 		private Hashtable _datastore = new Hashtable();
 		private ArrayList _libs = null;
