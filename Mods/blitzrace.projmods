@@ -1,7 +1,7 @@
 {
     "group": "External",
     "libs": [],
-    "frameworks": ["EventKitUI.framework", "EventKit.framework", "MessageUI.framework"],
+    "frameworks": ["EventKitUI.framework", "EventKit.framework", "MessageUI.framework", "CoreData.framework"],
     "headerpaths": ["iOS/External/**"],
     "files":   ["iOS/External/GoogleMobileAds.framework"],
     "folders": [],    
