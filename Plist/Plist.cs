@@ -31,7 +31,7 @@ using System.IO;
 using System.Text;
 using System.Xml;
 
-namespace PlistCS
+namespace LaikaBOSS.PlistCS
 {
     public static class Plist
     {

@@ -32,14 +32,14 @@ namespace UnityEditor.XUPorter
 		{
 			if (plist == null)
 				return;
-			Dictionary<string, object> dict = (Dictionary<string, object>)PlistCS.Plist.readPlist(plistPath);
+			Dictionary<string, object> dict = (Dictionary<string, object>)LaikaBOSS.PlistCS.Plist.readPlist(plistPath);
 			foreach( DictionaryEntry entry in plist)
 			{
 				this.AddPlistItems((string)entry.Key, entry.Value, dict);
 			}
 			if (plistModified)
 			{
-				PlistCS.Plist.writeXml(dict, plistPath);
+				LaikaBOSS.PlistCS.Plist.writeXml(dict, plistPath);
 			}
 		}
 
